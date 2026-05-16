@@ -1,97 +1,40 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-html,body{
+html,
+body {
     min-height: 100vh;
     background-color: var(--cor0);
     font-family: var(--font1)
 }
 
-:root{
-    --cor0:#8caa8b;
-    --cor1:#27CA22;
-    --cor2:#39A035;
-    --cor3:#3D753B;
-    --cor4:#334B32;
-    --cor5:#2B332B;
-    --font1:Arial, Helvetica, sans-serif;
-    
+:root {
+    --cor0: #8caa8b;
+    --cor1: #27CA22;
+    --cor2: #39A035;
+    --cor3: #3D753B;
+    --cor4: #334B32;
+    --cor5: #2B332B;
+    --font1: Arial, Helvetica, sans-serif;
+
 }
 
 /* ==============================================================CABEÇALHO */
-header{
+header {
     color: white;
-    background-image: linear-gradient(to bottom,var(--cor3),var(--cor4));
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
     padding-bottom: 20px;
     text-align: center;
     font-variant: small-caps;
     box-shadow: -1px 3px 3px 0px #000000b5;
 }
 
-/*====================================================== MENU DE NAVEGAÇÃO */
-nav{
-    color: white;
-    padding-bottom: 15px;
-    font-family: sans-serif;
-    text-align: center;
-}
-
-nav a{
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-}
-
-nav div ul{
-    display: none;
-    padding: 10px 0px;
-    right: 40px;
-    visibility: none;
-    position: absolute;
-    margin-top: 40px;
-    list-style: none;
-    background-color: var(--cor4);
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.459);
-}
-nav li{
-    margin: 5px 0px;
-}
-
-nav li:hover{
-    background-color: var(--cor5);
-    transition: .5s;
-
-    
-}
-
-nav img{
-    height: 25px;
-    top: 6px;
-    position: absolute;
-    right: 30px;
-    padding-top: 10px;
-}
-nav div:hover> ul{
-    display: block;
-}
-
-.redes{
-    position: absolute;
-    right: 80px;
-    top: 10px;
-}
-.imgtop{
-    padding: 0px 10px;
-    
-}
-
-/* ============================================================MAIN  */
-main{
+/*====================================================== MENU ============================================================MAIN  */
+main {
     background-color: white;
     min-width: 270px;
     max-width: 1050px;
@@ -100,90 +43,145 @@ main{
     border-radius: 0px 0px 10px 10px;
     box-shadow: 2px 3px 7px 2px #00000052;
 }
-main section h2{
+
+main section h2 {
     padding: 15px 0px;
     text-align: center;
     font-variant: small-caps;
 }
 
-main p{
+main p {
     padding: 0px 20px;
     line-height: 2em;
     text-indent: 30px;
     text-align: center;
 }
 
-main p.ajuste{
+main p.ajuste {
     padding-bottom: 40px;
 }
 
-main img.pequena{
+main img.pequena {
     max-width: 60vw;
     margin: auto;
     display: block;
 
 }
 
-main img.yt{
+main img.yt {
     max-width: 20vw;
     margin: auto;
     display: block;
 }
 
+/* ================================================================HEADER */
+header {
+    padding-bottom: 0px;
+}
+
+
+nav>ul,li,a {
+    list-style-position: inside;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: var(--cor4);
+}
+
+nav>li,a:hover {
+    background-color: var(--cor3);
+    border-radius: 3px;
+}
+#itens{
+    display: none;
+}
+.meu-ico {
+    width: 100vw;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined' !important;
+    /* Corrigido para a versão Symbols */
+    font-variant: normal !important;
+    /* Anula o small-caps que quebrava o ícone */
+    text-transform: lowercase !important;
+    /* Garante que o texto fique sempre minúsculo */
+    font-size: 36px;
+    /* Um tamanho ideal para mobile */
+    color: white;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    width: 90vw;
+}
+
+.material-symbols-outlined:hover {
+    color: white;
+    background-color: var(--cor3);
+}
+
 /* ================================================================SEÇÕES */
-section ul{
+section {
+    padding-bottom: 40px;
+}
+
+section ul {
     list-style-position: inside;
     list-style-type: '\1F449\00A0';
     text-align: center;
 }
 
 
-section img.livros{
+section img.livros {
     max-width: 30vw;
     margin: auto;
     display: block;
 }
 
-section a{
+section a {
     color: var(--cor3);
     font-weight: bolder;
     text-decoration: none;
     font-size: 17px;
 }
-section a:hover{
+
+section a:hover {
     text-decoration: underline;
     color: darkred;
 }
 
-section div{
-    background-color:#bfcebf;
+section div {
+    background-color: #bfcebf;
     margin: 0px 30px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 1px 2px 4px 2px #00000069;
 }
-div h2{
+
+div h2 {
     background-color: var(--cor4);
     color: white;
     border-radius: 10px 10px 0px 0px;
 
 }
 
-.bt{
-    background-image: linear-gradient(to left,var(--cor3),var(--cor4));
+.bt {
+    background-image: linear-gradient(to left, var(--cor3), var(--cor4));
     padding: 5px;
     border-radius: 5px;
     color: white;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
 }
- a:hover.bt{
+
+a:hover.bt {
     color: white;
     text-decoration: none;
-    background-image: linear-gradient(to right,var(--cor3),var(--cor4));
+    background-image: linear-gradient(to right, var(--cor3), var(--cor4));
 }
 
 
 /*============================================================== RODA PÉ */
-footer{
+footer {
     text-align: center;
     color: rgba(255, 255, 255, 0.603);
     background-color: var(--cor4);
@@ -191,13 +189,5 @@ footer{
 
 }
 
-footer a {
-    color: rgba(255, 255, 255, 0.603);
-    text-decoration: none;   
-}
-
-footer a:hover{
-    text-decoration: underline;
-    font-weight: bolder;
-
-}
+/* ========================================================== GOOGLE ICONS */
+/* ========================================================== GOOGLE ICONS */

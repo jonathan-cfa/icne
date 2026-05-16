@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Typical devices breakpoints
+-------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992 até 1200px
+Grandes telas: acima de 1200px
+*/
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    nav#itens {
+        display: block;
+    }
+
+    nav>ul,
+    li,
+    a {
+        display: flex;
+        background-color: transparent;
+    }
+
+    .bt {
+        background-image: linear-gradient(to left, var(--cor3), var(--cor4));
+        padding: 5px px;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
+        display: inline-block;
+       /*  width: 210px; */
+
+    }
+
+    a:hover.bt {
+        color: white;
+        text-decoration: none;
+        background-image: linear-gradient(to right, var(--cor3), var(--cor4));
+    }
+    
+    strong,li{
+        color: black;
+    }
+
+}
