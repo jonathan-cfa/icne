@@ -44,5 +44,8 @@ Grandes telas: acima de 1200px
     strong,li{
         color: black;
     }
+    nav > ul> li{
+    border-bottom: 0px solid white;
+}
 
 }
