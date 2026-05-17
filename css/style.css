@@ -22,6 +22,9 @@ body {
     --font1: Arial, Helvetica, sans-serif;
 
 }
+iframe{
+   max-width: 300px;
+}
 
 /* ==============================================================CABEÇALHO */
 header {
@@ -184,7 +187,44 @@ a:hover.bt {
     background-image: linear-gradient(to right, var(--cor3), var(--cor4));
 }
 
+/* ============================================================= Tabelas */
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 600px;
+    margin: auto;
+}
+th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+tbody > tr:nth-child(even){
+    background-color: white;
+}
+tbody > tr:nth-child(odd){
+    background-color: rgb(152, 172, 152);
+}
+thead{
+    background-color: rgb(68, 94, 68);
+    color: white;
+}
+section#tabAnual{
+    overflow-x: scroll;
+}
 
+details{
+    padding: 10px 30px;
+    font-size: 1.5em;
+    
+}
+
+table#progCulto{
+    width: 350px;
+}
+
+article#detailtab{
+    text-align: center;
+}
 /*============================================================== RODA PÉ */
 footer {
     text-align: center;

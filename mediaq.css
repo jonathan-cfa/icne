@@ -47,5 +47,8 @@ Grandes telas: acima de 1200px
     nav > ul> li{
     border-bottom: 0px solid white;
 }
+iframe{
+    max-width: 100vw;
+}
 
 }
