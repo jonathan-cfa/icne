@@ -225,6 +225,12 @@ table#progCulto{
 article#detailtab{
     text-align: center;
 }
+
+a#linkest{
+    background-color: white;
+    padding: 10px 0px;
+    
+}
 /*============================================================== RODA PÉ */
 footer {
     text-align: center;
